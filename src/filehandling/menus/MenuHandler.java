@@ -27,7 +27,7 @@ public class MenuHandler {
     		}
     			
     	}while(scanner.hasNextInt());
-    	return input;
+    		return input;
     	}
 }
 

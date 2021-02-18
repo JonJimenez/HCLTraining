@@ -2,24 +2,16 @@ package liss.lissMenus;
 
 import java.util.Scanner;
 
-public class lissMenu {
-	public void DisplayMenu() {
-		System.out.println("We will randomly generate any size length array of numbers");
-		System.out.println("What would you like the array length to be?");
-		System.out.println("Enter nothing if you want to exit");
+public class LissMenu {
+	public LissMenu() {
+		System.out.println("We will randomly generate any size length array of numbers from 1-100");
+		System.out.println("And return the Longest Subsequence in this array");
+		System.out.println("How long would you like the array to be?");
 	}
 	
 	public Integer getUserInput() {
-		DisplayMenu();
-		Scanner sc = new Scanner(System.in);
-		try {
-			while(sc.hasNext()) {
-				return sc.nextInt();
-			}
-		}
-		finally{
-			return null;
-		}
-		
+		Scanner scan = new Scanner(System.in);
+		int length = scan.nextInt();
+		return length;
 	}
 }
